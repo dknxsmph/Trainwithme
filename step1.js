@@ -12,9 +12,10 @@ console.log('MY NAME IS : ' + myName +' '+ 'THAWEEWATTHANAPRAYUN');
 let myMoney = 100000;       //ใช้ตัวแปร let ซึ่งจะสามารถ updated ค่าได้ แต่ไม่สามารถที่จะ declared ได้
 console.log("I HAVE : " + myMoney +"\tBAHT");
 myMoney= 10;                //updated myMoneyให้เหลือ10บาทต่ะ 
-console.log("I HAVE : " + myMoney + "\tBAHT");
+console.log("I HAVE : " + myMoney + "\tBAHT");      //ใช้ \t ในการเว้นวรรคได้ด้วย สุดเท่ 
 
 if(age >= 20) {
     console.log("You can drink alcohol")
 }else {
     console.log("You should drink milk");}
+//ใช้ if ง่ายๆ ง่ายมาก สุดจ๊าบ
