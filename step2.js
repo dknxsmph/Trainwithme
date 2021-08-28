@@ -16,5 +16,8 @@ console.log(hagd.toLocaleUpperCase());
 console.log(`My name is ${isname} ... ${hagd}`); //การเชื่อม string โดยใช้ ${} จะสามารถเขียน string ได้ยาวๆ
 console.log(`${8*8}`); // ${ให้ใส่นิพจน์ค่าาาา}
 console.log(`${1>2}`); //จะได้ false เพราะ 1 ไม่ได้ มากกว่า 2
+Equality = `1` == 1 ; //true จะอนุญาตให้ทำเป็น type convertion ได้
+
+Strict = `1` === 1; //false เช็ค type ด้วย
 
  
