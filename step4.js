@@ -7,18 +7,17 @@ let exo = {
     exoM: "Chinese",
     exoL: "Fandom",
 };
-console.log(exo);
+//console.log(exo);
 
 //Value is array
 let exoUnits = {
     Units: "EXOK",
-    Member: ["Suho", "Baekhyun", "Chanyeol", "D.O.", "Kai", "Sehun"],
+    Member: ["Suho", "Baekhyun", "Chanyeol", "D.O.", "Kai", "Sehun"]
 };
 // ใช้ for/of ในการเข้าถึงข้อมูล
-for(exok of exoUnits){
-    log(exoUnits)
-}
-
+// for(let exoK of exoUnits.Member){
+//     console.log([exo][ex])
+// }
 
 //Aggregated obj
 let exoAllUnits = {
@@ -44,10 +43,9 @@ let exoAllUnits = {
             "Lead Rapper",
         ],
     },
-};
-//console.log(sm);
+}
 
-// for (key in NCTUnits){
-//     console.log(key)
-//     console.log(NCTUnits[key])
-// }
+let exoK = {"EXOK" :  "Korean"}
+let exoM = {"EXOM" : "Chinese"}
+let exoUnitsArray = [exoK , exoM ];
+console.log(exoUnitsArray);
