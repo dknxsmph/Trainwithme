@@ -1,17 +1,21 @@
+//Created Object
 //Obj Examples
+
 //simple obj
-let NCT ={
-    Units : "127",
-    Name : "Ten"
+let EXO ={
+    EXOK : "Korean",
+    EXOM : "Chinese"
 };
-//console.log(NCT);
+console.log(EXO);
+
 //Value is array
-let NCTUnits = {
-    Units : "127",
-    Member : ["Ten" , "Doyoung" , "Jeahyun"]
+let EXOUnits = {
+    Units : "EXOK",
+    Member : ["Suho","Baekhyun","Chanyeol","D.O.","Kai","Sehun"]
+ 
 };
-console.log(NCTUnits.Member[0])
-console.log(NCTUnits.Member[NCTUnits.Member.length -1])
+console.log(EXOUnits);
+console.log(EXOUnits.Member);
 
 //console.log(NCTUnits);
 let sm = {
