@@ -2,29 +2,48 @@
 //Obj Examples
 
 //simple obj
-let EXO ={
-    EXOK : "Korean",
-    EXOM : "Chinese"
+let exo = {
+    exoK: "Korean",
+    exoM: "Chinese",
+    exoL: "Fandom",
 };
-console.log(EXO);
+console.log(exo);
 
 //Value is array
-let EXOUnits = {
-    Units : "EXOK",
-    Member : ["Suho","Baekhyun","Chanyeol","D.O.","Kai","Sehun"]
- 
+let exoUnits = {
+    Units: "EXOK",
+    Member: ["Suho", "Baekhyun", "Chanyeol", "D.O.", "Kai", "Sehun"],
 };
-console.log(EXOUnits);
-console.log(EXOUnits.Member);
+// ใช้ for/of ในการเข้าถึงข้อมูล
+for(exok of exoUnits){
+    log(exoUnits)
+}
 
-//console.log(NCTUnits);
-let sm = {
-    loca : 1485,
-    phone : 888888 ,
-    groups :{
-        NCT : "nice",
-        EXO : "very nice"
-    }
+
+//Aggregated obj
+let exoAllUnits = {
+    EXOK: {
+        Member: ["Suho", "Baekhyun", "Chanyeol", "D.O.", "Kai", "Sehun"],
+        Position: [
+            "Lead Vocalist",
+            "Main Vocalist",
+            "Main Rapper",
+            "Main Vocalist",
+            "Main Dancer",
+            "Lead Dancer",
+        ],
+    },
+    EXOM: {
+        Member: ["Xiumin", "Luhan", "Kris", "Lay", "Chen", "Tao"],
+        Position: [
+            "Vocalist, Rapper",
+            "Lead Vocalist",
+            "Main Rapper",
+            "Main Dancer",
+            "Main Vocalist",
+            "Lead Rapper",
+        ],
+    },
 };
 //console.log(sm);
 
