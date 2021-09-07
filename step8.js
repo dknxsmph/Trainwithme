@@ -32,21 +32,18 @@ class ListMoney {
         }
     }
     toString() {
-        let result = 0;
+        let result = ``;
         for (const key in this._moneys) {
             `${key} `
-            result += this._moneys[key]
+            result += `${key} :  ${this._moneys[key]._amount} \n`
         }
         return result;
     }
-
-
 }
 
 function changeCalculator(index, myMoney) {
     const price = Products[index]._price;
     let changeMoney = myMoney - price;
-    console.log(myMoney);
     let numOfMoney = new ListMoney();
     if (changeMoney < 0) return console.log('Your money is NOT ENOUGH !');
     if (changeMoney == 0) return console.log('You DO NOT GET CHANGE');
@@ -86,4 +83,4 @@ function changeCalculator(index, myMoney) {
     return numOfMoney.toString();
 }
 
-console.log(changeCalculator(2, 30000));
+console.log(changeCalculator(1, 70000));
