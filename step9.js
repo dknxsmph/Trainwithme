@@ -22,6 +22,7 @@ class Player {
     set lastName(name) { this._lastName = name; }
 }
 
+
 function player(firstName, lastName) {
     console.log(`you are in player func`)
     let fName;
@@ -47,6 +48,8 @@ function playerCon(firstName, lastName, sex) {
         this.title = `MR`
     }
 }
+let p3 = new Player('asd');
+console.log(p3);
 let p1 = new playerCon(`N`, `T`, `F`);
 let p2 = new playerCon(`D`, `K`, `M`);
 console.log(p1);
