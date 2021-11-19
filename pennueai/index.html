@@ -21,18 +21,18 @@
 <body>
     <nav class=" navbar navbar-expand-lg navbar-light bg-light fixed-top ">
         <a class="navbar-brand mx-5 ">P E N T O R</a>
-        <img src="./img/nightday.png " alt="nightorday " height="50 " width="50 " id="theme ">
+        <img src="./img/nightday.png " alt="nightorday" height="50 " width="50 " id="theme">
         <button class="navbar-toggler " type="button " data-toggle="collapse " data-target="#navbarNavDropdown " aria-controls="navbarNavDropdown " aria-expanded="false " aria-label="Toggle navigation ">
         <span class="navbar-toggler-icon "></span>
         </button>
-        <div class="collapse navbar-collapse " id="navbarNavDropdown ">
-            <ul class="navbar-nav ms-auto ">
-                <li class="nav-item d-flex align-items-center ">
-                    <div id="input " class="invisible ">
-                        <div class="input-group ">
-                            <input id="input-text " type="text " class="form-control rounded-2 " placeholder="Search " />
-                            <div class="input-group-append ">
-                                <button id="btn-search " class="btn btn-outline-secondary mx-3 " type="button ">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item d-flex align-items-center">
+                    <div id="input" class="invisible">
+                        <div class="input-group">
+                            <input id="input-text" type="text" class="form-control rounded-2" placeholder="Search" />
+                            <div class="input-group-append">
+                                <button id="btn-search" class="btn btn-outline-secondary mx-3" type="button">
                     Search
                   </button>
                             </div>
@@ -40,20 +40,20 @@
                     </div>
                 </li>
                 <li>
-                    <a class="nav-link " id="search " style="cursor: pointer; text-align: right ">
-                        <span class="material-icons mt-1 ">
-                <img
-                  src="img/sicon.png "
-                  alt="search "
-                  class="nav-icon mx-3 "
-                  height="40px "
-                  width="40px "
+                    <a class="nav-link" id="search" style="cursor: pointer; text-align: right">
+                        <span class="material-icons mt-1">
+                <img id="cba"
+                  src="img/sicon.png"
+                  alt="search"
+                  class="nav-icon mx-3"
+                  height="40px"
+                  width="40px"
                 />
               </span>
                     </a>
                 </li>
-                <li class="nav-item position-relative ">
-                    <a class="nav-link position-relative top-60 " id="cart " style="cursor: pointer " data-bs-toggle="modal " data-bs-target="#test ">
+                <li class="nav-item position-relative">
+                    <a class="nav-link position-relative top-60" id="cart " style="cursor: pointer" data-bs-toggle="modal" data-bs-target="#test">
                         <span class="material-icons mt-1 ">
                 <img
                   src="img/addicon.png "
@@ -63,7 +63,7 @@
                   width="40px "
                 />
               </span>
-                        <span id="item-count " class=" position-absolute top-0 start-50 badge rounded-pill bg-secondary ">
+                        <span id="item-count" class=" position-absolute top-0 start-50 badge rounded-pill bg-secondary ">
                 0
               </span>
                     </a>
@@ -95,6 +95,9 @@
 
     </div>
     <script src="./products/loadProducts.js" type="module"></script>
+    <script src="./cart/carts.js" type="module"></script>
+    <script src="./search/search.js" type="module"></script>
+
 </body>
 
 </html>
