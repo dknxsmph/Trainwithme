@@ -1,8 +1,9 @@
 import { product } from './ProductList.js';
 import { cart } from '../cart/carts.js';
 const dprod = document.querySelector('#prod');
-const iTemcount = document.querySelector('#item-count')
+const iTemcount = document.querySelector('#countItem')
 
+//prodList
 function showAllprod(prod) {
     prod.forEach(e => {
 
@@ -54,20 +55,26 @@ function showAllprod(prod) {
         cardb.appendChild(pStock);
         cardb.appendChild(btnBuy);
 
-        btnBuy.addEventListener('click', () => {
+        // btnBuy.addEventListener('click', (e) => {
+        //     alert(`Add ${e.productId} : ${e.productName} to your cart`);
+        //     console.log(e.target);
+        // });
+
+        btnBuy.addEventListener('click', (e) => {
             const prodId = e.productId;
             alert(`Add ${e.productId} : ${e.productName} to your cart`);
-            const existingItem = cart.find(x => x.prodId === prodId);
-            console.log(existingItem)
+            const existingItem = cart.items.find(x => x.prodId === prodId);
             if (existingItem) {
                 existingItem.quantity++;
             } else {
-                cart.push({
+                cart.items.push({
                     prodId,
                     quantity: 1
                 })
             }
-            let countItem = showItemcount(cart);
+            console.log(existingItem)
+
+            let countItem = showItemcount(cart.items);
             iTemcount.textContent = countItem;
         })
     })

@@ -19,6 +19,7 @@ search.addEventListener('click', () => {
 });
 
 btnSearch.addEventListener('click', () => {
+
     let vSearch = searchx();
     dprod.innerHTML = " ";
     showAllprod(vSearch);
